@@ -71,7 +71,7 @@ function Index() {
               Fig. 01 — Introduction
             </p>
             <h1 className="animate-[rise_0.8s_var(--ease-out-soft)_0.1s_both] mt-6 font-display text-[clamp(3rem,8vw,6.5rem)] font-medium leading-[0.92] tracking-tight text-balance">
-              Grace Marsh<span className="text-ochre">.</span>
+              Nicholas David<span className="text-ochre">.</span>
             </h1>
             <p className="animate-[rise_0.8s_var(--ease-out-soft)_0.2s_both] mt-7 max-w-[46ch] text-lg text-pretty text-ink/70">
               Software engineer finishing at the University of Carthage, May
