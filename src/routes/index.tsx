@@ -8,17 +8,17 @@ import projectFieldnote from "@/assets/project-fieldnote.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grace Marsh — Software Engineer" },
+      { title: "Nicholas H. David, Biomedical and Mechanical Engineer" },
       {
         name: "description",
         content:
-          "Portfolio of Grace Marsh, a software engineer graduating in 2025. Building distributed systems and the interfaces that make them legible.",
+          "Portfolio of Nicholas David, a graduate biomedical engineer designing and building medical technologies across devices, biomaterials, prototyping and machine learning.",
       },
-      { property: "og:title", content: "Grace Marsh — Software Engineer" },
+      { property: "og:title", content: "Nicholas H. David, Biomedical and Mechanical Engineer" },
       {
         property: "og:description",
         content:
-          "Portfolio of Grace Marsh, a software engineer graduating in 2025. Building distributed systems and the interfaces that make them legible.",
+          "Portfolio of Nicholas David, a graduate biomedical engineer designing and building medical technologies across devices, biomaterials, prototyping and machine learning.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -34,7 +34,7 @@ function Index() {
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
           <div className="flex items-baseline gap-3">
             <span className="font-display text-lg font-semibold tracking-tight">
-              G. Marsh
+              N. David
             </span>
             <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50 sm:inline">
               Engineering Portfolio
@@ -74,9 +74,10 @@ function Index() {
               Nicholas David<span className="text-ochre">.</span>
             </h1>
             <p className="animate-[rise_0.8s_var(--ease-out-soft)_0.2s_both] mt-7 max-w-[46ch] text-lg text-pretty text-ink/70">
-              Software engineer finishing at the University of Carthage, May
-              2025. I build distributed systems and the interfaces that make
-              them legible — precise, well-documented, and tested.
+              Graduate Biomedical Engineer from the University of Technology Sydney,
+              with a sub-major in Mechanical Engineering. I design and build practical
+              healthcare technologies across medical devices, prototyping, biomaterials,
+              microfabrication and machine learning.
             </p>
             <div className="animate-[rise_0.8s_var(--ease-out-soft)_0.3s_both] mt-9 flex flex-wrap items-center gap-4">
               <a
@@ -89,7 +90,7 @@ function Index() {
                 href="#"
                 className="inline-flex items-center gap-2 border border-ink/20 px-5 py-3 font-mono text-[12px] uppercase tracking-[0.15em] transition-colors hover:border-ochre hover:text-ochre"
               >
-                Download résumé
+                Download Resume
               </a>
             </div>
           </div>
@@ -97,7 +98,7 @@ function Index() {
             <div className="animate-[fade_0.8s_var(--ease-out-soft)_0.3s_both] grid flex-1 place-items-center overflow-hidden rounded-[min(1vw,12px)] bg-mist outline outline-1 -outline-offset-1 outline-black/5">
               <img
                 src={heroPortrait}
-                alt="Grace Marsh"
+                alt="Nicholas David"
                 width={1024}
                 height={1280}
                 className="aspect-[4/5] h-full w-full object-cover"
@@ -117,19 +118,20 @@ function Index() {
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
               Focus
             </p>
-            <p className="mt-1 font-medium">Distributed Systems</p>
+            <p className="mt-1 font-medium">Medical Devices</p>
           </div>
           <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.1s_both]">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
               Degree
             </p>
-            <p className="mt-1 font-medium">B.S. Computer Science</p>
+            <p className="mt-1 font-medium">B.Eng. (Hons), Biomedical Engineering
+            Mechanical Engineering Sub-major</p>
           </div>
           <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.2s_both]">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
               GPA
             </p>
-            <p className="mt-1 font-medium">3.9 / 4.0</p>
+            <p className="mt-1 font-medium">6.5 / 7.0</p>
           </div>
           <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.3s_both]">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
