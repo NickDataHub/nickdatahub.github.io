@@ -114,37 +114,38 @@ function Index() {
 
         {/* META STRIP */}
         <section className="grid grid-cols-2 gap-6 border-t border-hair py-6 md:grid-cols-12">
-         <div className="animate-[fade_0.6s_var(--ease-out-soft)_both] md:col-span-2">
-  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
-    Focus
-  </p>
-  <p className="mt-1 font-medium">Medical Devices</p>
-</div>
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_both] md:col-span-2">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
+              Focus
+            </p>
+            <p className="mt-1 font-medium">Medical Devices</p>
+          </div>
 
-<div className="animate-[fade_0.6s_var(--ease-out-soft)_0.1s_both] md:col-span-5">
-  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
-    Degree
-  </p>
-  <p className="mt-1 font-medium">
-    B.Eng. (Hons), Biomedical Engineering
-    <br />
-    Mechanical Engineering Sub-major
-  </p>
-</div>
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.1s_both] md:col-span-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
+              Degree
+            </p>
+            <p className="mt-1 font-medium">
+              B.Eng. (Hons), Biomedical Engineering
+              <br />
+              Mechanical Engineering Sub-major
+            </p>
+          </div>
 
-<div className="animate-[fade_0.6s_var(--ease-out-soft)_0.2s_both] md:col-span-2">
-  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
-    GPA
-  </p>
-  <p className="mt-1 font-medium">6.5 / 7.0</p>
-</div>
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.2s_both] md:col-span-2">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
+              GPA
+            </p>
+            <p className="mt-1 font-medium">6.5 / 7.0</p>
+          </div>
 
-<div className="animate-[fade_0.6s_var(--ease-out-soft)_0.3s_both] md:col-span-3">
-  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
-    Location
-  </p>
-  <p className="mt-1 font-medium">Sydney, NSW</p>
-</div>
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.3s_both] md:col-span-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
+              Location
+            </p>
+            <p className="mt-1 font-medium">Sydney, NSW</p>
+          </div>
+        </section>
 
         {/* WORK */}
         <section id="work" className="pb-6 pt-16">
