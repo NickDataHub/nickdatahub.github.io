@@ -114,21 +114,21 @@ function Index() {
 
         {/* META STRIP */}
         <section className="grid grid-cols-2 gap-6 border-t border-hair py-6 md:grid-cols-12">
-          <div className="animate-[fade_0.6s_var(--ease-out-soft)_both] md:col-span-2">
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_both] md:col-span-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
               Focus
             </p>
             <p className="mt-1 font-medium">Medical Devices</p>
           </div>
 
-          <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.1s_both] md:col-span-5">
+          <div className="animate-[fade_0.6s_var(--ease-out-soft)_0.1s_both] md:col-span-4">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/45">
               Degree
             </p>
             <p className="mt-1 font-medium">
               B.Eng. (Hons), Biomedical Engineering
               <br />
-              Mechanical Engineering Sub-major
+              Mechanical Engineering Sub-Major
             </p>
           </div>
 
@@ -147,7 +147,7 @@ function Index() {
           </div>
         </section>
 
-        {/* WORK */}
+         {/* WORK */}
         <section id="work" className="pb-6 pt-16">
           <div className="flex items-end justify-between gap-6">
             <div>
@@ -180,24 +180,26 @@ function Index() {
                   <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
                     <span>01</span>
                     <span className="h-px flex-1 bg-hair"></span>
-                    <span>2024 · Live</span>
+                    <span>2026</span>
                   </div>
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-tight md:text-3xl">
-                    Ledgerlite
+                    AnemoDetect
                   </h3>
                   <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
-                    A single-binary event-sourced ledger with a zero-dependency
-                    web UI. Handles 40k ops/sec on a laptop with full
-                    replayable history.
+                    Developed a smartphone-oriented machine-learning concept to
+                    classify anaemic vs non-anaemic patients using conjunctival pallor images. 
+                    Work has included processing datasets, automated ROI extraction, image preprocessing, 
+                    Python/Google Colab, transfer learning/CNN selection, dataset analysis and deployment considerations. 
                   </p>
                 </div>
                 <div className="mt-5 flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/60">
-                    <span className="border border-hair px-2 py-1">Go</span>
+                    <span className="border border-hair px-2 py-1">Python</span>
                     <span className="border border-hair px-2 py-1">
-                      RocksDB
+                      Pandas
                     </span>
-                    <span className="border border-hair px-2 py-1">WASM</span>
+                    <span className="border border-hair px-2 py-1">Machine Learning</span>
+                    <span className="border border-hair px-2 py-1">web/app development</span>
                   </div>
                   <a
                     href="#"
@@ -225,25 +227,26 @@ function Index() {
                   <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
                     <span>02</span>
                     <span className="h-px flex-1 bg-hair"></span>
-                    <span>2024 · OSS</span>
+                    <span>2026</span>
                   </div>
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-tight md:text-3xl">
-                    Tessera
+                    Rapid Sideline Concussion Detection
                   </h3>
                   <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
-                    A typed query layer for vector databases. 1.2k stars; adopted
-                    by two internal teams at a summer internship for retrieval
-                    pipelines.
+                    Developed a point-of-care lateral flow assay concept for concussion screening using salivary S100B as a biomarker. Combined assay development with nanoparticle enhancement, UV-Vis characterisation and quantitative image analysis for semi-quantitative test interpretation.
                   </p>
                 </div>
                 <div className="mt-5 flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/60">
-                    <span className="border border-hair px-2 py-1">Rust</span>
+                    <span className="border border-hair px-2 py-1">Lateral flow assay</span>
                     <span className="border border-hair px-2 py-1">
-                      Qdrant
+                      Biosensors
                     </span>
                     <span className="border border-hair px-2 py-1">
-                      GraphQL
+                      Matlab
+                    </span>
+                    <span className="border border-hair px-2 py-1">
+                      Clinical studies
                     </span>
                   </div>
                   <a
@@ -272,10 +275,56 @@ function Index() {
                   <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
                     <span>03</span>
                     <span className="h-px flex-1 bg-hair"></span>
-                    <span>2023 · Research</span>
+                    <span>2026</span>
                   </div>
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-tight md:text-3xl">
-                    Fieldnote
+                    Bone Regeneration Scaffold
+                  </h3>
+                  <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
+                    Designed an RGD-functionalised scaffold for bone regeneration using GelMA, alginate, collagen and hydroxyapatite. The project investigates endothelial network formation and stromal-cell proliferation while comparing RGD-functionalised and control scaffold geometries. Incorporated bone stromal cells and mesenchymal stem cells.
+                  </p>
+                </div>
+                <div className="mt-5 flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/60">
+                    <span className="border border-hair px-2 py-1">
+                      3D Bioprinting
+                    </span>
+                    <span className="border border-hair px-2 py-1">
+                      Tissue Engineering
+                    </span>
+                    <span className="border border-hair px-2 py-1">Cell Culturing</span>
+                    <span className="border border-hair px-2 py-1">Biomaterials</span>
+                  </div>
+                  <a
+                    href="#"
+                    className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
+                  >
+                    Read ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/*project 4 */}
+            <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
+              <div className="md:col-span-5">
+                <img
+                  src={projectFieldnote}
+                  alt="Fieldnote project screenshot"
+                  width={1280}
+                  height={800}
+                  loading="lazy"
+                  className="aspect-[16/10] w-full rounded-[min(1vw,12px)] object-cover outline outline-1 -outline-offset-1 outline-black/5"
+                />
+              </div>
+              <div className="flex flex-col justify-between md:col-span-7">
+                <div>
+                  <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
+                    <span>04</span>
+                    <span className="h-px flex-1 bg-hair"></span>
+                    <span>2026</span>
+                  </div>
+                  <h3 className="mt-4 font-display text-2xl font-medium tracking-tight md:text-3xl">
+                    Phase Change Material Cooling Helmet
                   </h3>
                   <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
                     A mesh sensor dashboard for a capstone with the
