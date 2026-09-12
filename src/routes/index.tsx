@@ -327,20 +327,63 @@ function Index() {
                     Phase Change Material Cooling Helmet
                   </h3>
                   <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
-                    A mesh sensor dashboard for a capstone with the
-                    Environmental Systems lab. Offline-first sync, 90+ nodes,
-                    sub-second chart updates.
+                    Designed and prototyped a motorcycle helmet cooling system incorporating phase-change materials to reduce rider head temperature for extended periods. Compared multiple PCM materials and cavity geometries using transient ANSYS Fluent simulations incorporating heat transfer, melting and solidification behaviour.
                   </p>
                 </div>
                 <div className="mt-5 flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/60">
-                    <span className="border border-hair px-2 py-1">
-                      TypeScript
-                    </span>
-                    <span className="border border-hair px-2 py-1">
-                      SQLite
-                    </span>
-                    <span className="border border-hair px-2 py-1">D3</span>
+                    <span className="border border-hair px-2 py-1">Ansys Fluent</span>
+                    <span className="border border-hair px-2 py-1">Thermal Analysis</span>
+                    <span className="border border-hair px-2 py-1">SolidWorks</span>
+                    <span className="border border-hair px-2 py-1">CAD</span>
+                    <span className="border border-hair px-2 py-1">CFD</span>
+
+
+                  </div>
+                  <a
+                    href="#"
+                    className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
+                  >
+                    Read ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project 5 */}
+            <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
+              <div className="md:col-span-5">
+                <img
+                  src={projectFieldnote}
+                  alt="Fieldnote project screenshot"
+                  width={1280}
+                  height={800}
+                  loading="lazy"
+                  className="aspect-[16/10] w-full rounded-[min(1vw,12px)] object-cover outline outline-1 -outline-offset-1 outline-black/5"
+                />
+              </div>
+              <div className="flex flex-col justify-between md:col-span-7">
+                <div>
+                  <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
+                    <span>05</span>
+                    <span className="h-px flex-1 bg-hair"></span>
+                    <span>2025</span>
+                  </div>
+                  <h3 className="mt-4 font-display text-2xl font-medium tracking-tight md:text-3xl">
+                    3D Bioprinted Brain Model
+                  </h3>
+                  <p className="mt-3 max-w-[52ch] text-pretty text-ink/70">
+                    Developed a 3D-bioprinted hydrogel model designed to reproduce aspects of brain tissue mechanics and investigate chronic traumatic encephalopathy. Combined biomaterials, cell culture, bioprinting and fluorescence imaging to create a physiologically relevant experimental model.
+                  </p>
+                  <p className="mt-3 font-mono text-[13px] font-semibold uppercase tracking-[0.12em] text-ochre">
+                    UTS Tech Festival Outstanding Project Award
+                  </p>
+                </div>
+                <div className="mt-5 flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/60">
+                    <span className="border border-hair px-2 py-1">3D Bioprinting</span>
+                    <span className="border border-hair px-2 py-1">Tissue Engineering</span>
+                    <span className="border border-hair px-2 py-1">Cell Culturing</span>
+                    <span className="border border-hair px-2 py-1">Microscopy</span>
                   </div>
                   <a
                     href="#"
@@ -357,47 +400,46 @@ function Index() {
         {/* STACK + EDUCATION */}
         <section
           id="stack"
-          className="grid grid-cols-12 gap-10 border-t border-hair pt-16"
+          className="grid grid-cols-12 gap-10 border-t border-hair pb-12 pt-16"
         >
           <div className="col-span-12 md:col-span-7">
             <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-ochre">
               Fig. 03 — Capabilities
             </p>
             <h2 className="mt-4 font-display text-4xl font-medium tracking-tight">
-              Stack
+              Skills
             </h2>
             <div className="mt-8 space-y-6">
               <div className="flex gap-4">
                 <span className="w-24 shrink-0 pt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                  Languages
+                  Professional
                 </span>
                 <p className="text-pretty text-ink/75">
-                  Go, Rust, TypeScript, Python, SQL, Bash
+                  Technical Communication, Teamwork, Problem Solving, Leadership
                 </p>
               </div>
               <div className="flex gap-4">
                 <span className="w-24 shrink-0 pt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                  Systems
+                  Design
                 </span>
                 <p className="text-pretty text-ink/75">
-                  Postgres, Redis, Kafka, gRPC, Docker, Kubernetes
+                  Fusion 360, SolidWorks, CAD, Prototyping, 3D Printing
                 </p>
               </div>
               <div className="flex gap-4">
                 <span className="w-24 shrink-0 pt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                  Tooling
+                  Analysis
                 </span>
                 <p className="text-pretty text-ink/75">
-                  Terraform, GitHub Actions, Playwright, Grafana
+                  ANSYS Fluent, MATLAB, Simulink, Python, ImageJ
                 </p>
               </div>
               <div className="flex gap-4">
                 <span className="w-24 shrink-0 pt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                  Practice
+                  Fabrication
                 </span>
                 <p className="text-pretty text-ink/75">
-                  Test-driven design, profiling, incident write-ups, code
-                  review
+                  Photolithography, Microfabrication, Cleanroom Processes, 3D Bioprinting
                 </p>
               </div>
             </div>
@@ -405,37 +447,19 @@ function Index() {
           <div id="education" className="col-span-12 md:col-span-5">
             <div className="border-t border-ink/15 pt-6 md:border-t-0 md:pt-0">
               <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-ochre">
-                Fig. 04 — Record
+                Fig. 04 - Record
               </p>
               <h2 className="mt-4 font-display text-4xl font-medium tracking-tight">
                 Education
               </h2>
               <div className="mt-8 space-y-6">
                 <div className="border-l border-hair pl-5">
-                  <p className="font-medium">University of Carthage</p>
-                  <p className="text-sm text-ink/65">
-                    B.S. Computer Science · Systems Concentration
+                  <p className="text-xl font-medium">University of Technology Sydney</p>
+                  <p className="text-base text-ink/65">
+                    B.Eng. (Hons), Biomedical Engineering · Mechanical Engineering Sub-Major
                   </p>
-                  <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                    2021 — 2025
-                  </p>
-                </div>
-                <div className="border-l border-hair pl-5">
-                  <p className="font-medium">Northfield Labs</p>
-                  <p className="text-sm text-ink/65">
-                    Software Engineering Intern · Infrastructure
-                  </p>
-                  <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                    Summer 2024
-                  </p>
-                </div>
-                <div className="border-l border-hair pl-5">
-                  <p className="font-medium">University of Carthage</p>
-                  <p className="text-sm text-ink/65">
-                    Teaching Assistant · CS 401 Distributed Systems
-                  </p>
-                  <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-                    2024
+                  <p className="mt-1 font-mono text-[15px] uppercase tracking-[0.15em] text-ink/45">
+                    2023 — 2026
                   </p>
                 </div>
               </div>
@@ -454,26 +478,30 @@ function Index() {
                 Fig. 05 — Correspondence
               </p>
               <a
-                href="mailto:grace@gracemarsh.dev"
+                href="mailto:nnicdavid@gmail.com"
                 className="mt-5 inline-block font-display text-[clamp(2.5rem,7vw,5.5rem)] font-medium leading-[0.95] tracking-tight transition-colors hover:text-ochre"
               >
-                grace@gracemarsh.dev
+                nnicdavid@gmail.com
               </a>
               <p className="mt-6 max-w-[42ch] text-pretty text-ink/70">
-                Open to full-time software engineering roles starting June
-                2025. I reply within a day.
+                Open to full-time Biomedical Engineering roles.
+                <br /> I reply within a day.
               </p>
             </div>
             <div className="col-span-12 flex lg:col-span-4 lg:justify-end">
               <div className="flex gap-3">
                 <a
-                  href="#"
-                  className="border border-ink/20 px-4 py-3 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors hover:border-ochre hover:text-ochre"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="#"
+                  href="https://www.linkedin.com/in/nicdavid/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://www.linkedin.com/in/nicdavid/",
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }}
                   className="border border-ink/20 px-4 py-3 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors hover:border-ochre hover:text-ochre"
                 >
                   LinkedIn
@@ -487,10 +515,7 @@ function Index() {
       <footer className="border-t border-hair">
         <div className="mx-auto flex max-w-[1200px] flex-col items-start gap-3 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-            © 2025 Grace Marsh — Boston, MA
-          </p>
-          <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45">
-            Typeset in Fraunces &amp; Inter · No trackers
+            © 2026 Nicholas David - Sydney, NSW
           </p>
         </div>
       </footer>
