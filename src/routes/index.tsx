@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import heroPortrait from "@/assets/hero-portrait.jpg";
-import projectLedgerlite from "@/assets/project-ledgerlite.jpg";
-import projectTessera from "@/assets/project-tessera.jpg";
+import anemodetect from "@/assets/anemodetect.png";
+import concussion from "@/assets/concussion.png";
 import projectFieldnote from "@/assets/project-fieldnote.jpg";
+import bonescaffold1 from "@/assets/bonescaffold1.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,11 +42,11 @@ function Index() {
             </span>
           </div>
           <nav className="hidden items-center gap-7 font-mono text-[11px] uppercase tracking-[0.15em] text-ink/60 sm:flex">
-            <a href="#work" className="transition-colors hover:text-ochre">
-              Work
+            <a href="#projects" className="transition-colors hover:text-ochre">
+              Projects
             </a>
-            <a href="#stack" className="transition-colors hover:text-ochre">
-              Stack
+            <a href="#skills" className="transition-colors hover:text-ochre">
+              Skills
             </a>
             <a href="#education" className="transition-colors hover:text-ochre">
               Education
@@ -81,13 +82,14 @@ function Index() {
             </p>
             <div className="animate-[rise_0.8s_var(--ease-out-soft)_0.3s_both] mt-9 flex flex-wrap items-center gap-4">
               <a
-                href="#work"
+                href="#projects"
                 className="inline-flex items-center gap-2 bg-ink px-5 py-3 font-mono text-[12px] uppercase tracking-[0.15em] text-paper transition-colors hover:bg-ochre"
               >
                 View work →
               </a>
               <a
-                href="#"
+                href="/NicholasDavidResume.pdf"
+                download="NicholasDavidResume.pdf"
                 className="inline-flex items-center gap-2 border border-ink/20 px-5 py-3 font-mono text-[12px] uppercase tracking-[0.15em] transition-colors hover:border-ochre hover:text-ochre"
               >
                 Download Resume
@@ -148,7 +150,7 @@ function Index() {
         </section>
 
          {/* WORK */}
-        <section id="work" className="pb-6 pt-16">
+        <section id="projects" className="pb-6 pt-16">
           <div className="flex items-end justify-between gap-6">
             <div>
               <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-ochre">
@@ -167,8 +169,8 @@ function Index() {
             <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
               <div className="md:col-span-5">
                 <img
-                  src={projectLedgerlite}
-                  alt="Ledgerlite project screenshot"
+                  src={anemodetect}
+                  alt="anemodetect project screenshot"
                   width={1280}
                   height={800}
                   loading="lazy"
@@ -214,8 +216,8 @@ function Index() {
             <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
               <div className="md:col-span-5">
                 <img
-                  src={projectTessera}
-                  alt="Tessera project screenshot"
+                  src={concussion}
+                  alt="concussion project screenshot"
                   width={1280}
                   height={800}
                   loading="lazy"
@@ -262,8 +264,8 @@ function Index() {
             <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
               <div className="md:col-span-5">
                 <img
-                  src={projectFieldnote}
-                  alt="Fieldnote project screenshot"
+                  src={bonescaffold1}
+                  alt="bone scaffold project screenshot"
                   width={1280}
                   height={800}
                   loading="lazy"
@@ -399,7 +401,7 @@ function Index() {
 
         {/* STACK + EDUCATION */}
         <section
-          id="stack"
+          id="skills"
           className="grid grid-cols-12 gap-10 border-t border-hair pb-12 pt-16"
         >
           <div className="col-span-12 md:col-span-7">
