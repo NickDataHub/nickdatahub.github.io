@@ -3,8 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import anemodetect from "@/assets/anemodetect.png";
 import concussion from "@/assets/concussion.png";
-import projectFieldnote from "@/assets/project-fieldnote.jpg";
 import bonescaffold1 from "@/assets/bonescaffold1.png";
+import helmet from"@/assets/helmet.png";
+import brain from"@/assets/brain.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,7 +60,7 @@ function Index() {
             href="#contact"
             className="hidden items-center gap-2 border border-ink/20 px-3 py-2 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors hover:border-ochre hover:text-ochre sm:inline-flex"
           >
-            Available &apos;25
+            Available Now
           </a>
         </div>
       </header>
@@ -107,9 +108,6 @@ function Index() {
               />
             </div>
             <div className="hidden flex-col gap-1 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/50 lg:flex">
-              <span>Ref. GM-2025</span>
-              <span>Scale 1:1</span>
-              <span>Sheet 01 / 04</span>
             </div>
           </div>
         </section>
@@ -160,8 +158,8 @@ function Index() {
                 Projects
               </h2>
             </div>
-            <p className="hidden font-mono text-[10px] uppercase tracking-[0.15em] text-ink/45 md:block">
-              03 Entries
+            <p className="hidden font-mono text-[14px] uppercase tracking-[0.15em] text-ink/45 md:block">
+              05 Entries
             </p>
           </div>
           <div className="mt-10 space-y-px bg-hair">
@@ -207,7 +205,7 @@ function Index() {
                     href="#"
                     className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
                   >
-                    Source ↗
+                    {/*Source ↗*/}
                   </a>
                 </div>
               </div>
@@ -255,7 +253,7 @@ function Index() {
                     href="#"
                     className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
                   >
-                    Source ↗
+                    {/*Source ↗*/}
                   </a>
                 </div>
               </div>
@@ -301,7 +299,7 @@ function Index() {
                     href="#"
                     className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
                   >
-                    Read ↗
+                    {/*Source ↗*/}
                   </a>
                 </div>
               </div>
@@ -310,8 +308,8 @@ function Index() {
             <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
               <div className="md:col-span-5">
                 <img
-                  src={projectFieldnote}
-                  alt="Fieldnote project screenshot"
+                  src={helmet}
+                  alt="helmet project screenshot"
                   width={1280}
                   height={800}
                   loading="lazy"
@@ -346,7 +344,7 @@ function Index() {
                     href="#"
                     className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
                   >
-                    Read ↗
+                    {/*Source ↗*/}
                   </a>
                 </div>
               </div>
@@ -355,8 +353,8 @@ function Index() {
             <div className="group grid grid-cols-1 gap-5 bg-paper p-5 transition-colors hover:bg-mist md:grid-cols-12 md:p-6">
               <div className="md:col-span-5">
                 <img
-                  src={projectFieldnote}
-                  alt="Fieldnote project screenshot"
+                  src={brain}
+                  alt="brain project screenshot"
                   width={1280}
                   height={800}
                   loading="lazy"
@@ -391,7 +389,7 @@ function Index() {
                     href="#"
                     className="font-mono text-[11px] uppercase tracking-[0.15em] text-ochre group-hover:underline"
                   >
-                    Read ↗
+                    {/*Source ↗*/}
                   </a>
                 </div>
               </div>
