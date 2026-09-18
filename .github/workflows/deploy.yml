@@ -1,0 +1,50 @@
+name: Deploy Portfolio to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build website
+        run: npm run build
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 21098 "$CPANEL_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy website
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+        run: |
+          rsync -avz \
+            -e "ssh -p 21098 -i ~/.ssh/id_rsa" \
+            .output/public/ \
+            "$CPANEL_USER@$CPANEL_HOST:/home/$CPANEL_USER/public_html/"
