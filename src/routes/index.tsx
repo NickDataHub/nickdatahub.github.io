@@ -77,7 +77,7 @@ function Index() {
             </h1>
             <p className="animate-[rise_0.8s_var(--ease-out-soft)_0.2s_both] mt-7 max-w-[46ch] text-lg text-pretty text-ink/70">
               Graduate Biomedical Engineer from the University of Technology Sydney,
-              with a sub-major in Mechanical Engineering. I design and build practical
+              with a Sub-Major in Mechanical Engineering. I design and build practical
               healthcare technologies across medical devices, prototyping, biomaterials,
               microfabrication and machine learning.
             </p>
