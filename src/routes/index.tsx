@@ -77,7 +77,7 @@ function Index() {
               Nicholas H. David<span className="text-ochre">.</span>
             </h1>
             <p className="animate-[rise_0.8s_var(--ease-out-soft)_0.2s_both] mt-7 max-w-[46ch] text-lg text-pretty text-ink/70">
-              I’m a Biomedical Engineering graduate from UTS with a Sub&#8209;Major in Mechanical Engineering.
+              I am a Biomedical Engineering graduate from UTS with a Sub&#8209;Major in Mechanical Engineering.
               <br></br>
               <br></br>
               I enjoy the hands-on side of engineering: taking an idea, building it, testing it and working out how to make it better. What draws me to healthcare is the chance to create something useful for patients and the people caring for them. My projects explore this through medical devices, biomaterials and machine learning.
