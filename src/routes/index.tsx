@@ -7,6 +7,7 @@ import bonescaffold1 from "@/assets/bonescaffold1.png";
 import helmet from"@/assets/helmet.png";
 import brain from"@/assets/brain.png";
 
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -76,10 +77,10 @@ function Index() {
               Nicholas H. David<span className="text-ochre">.</span>
             </h1>
             <p className="animate-[rise_0.8s_var(--ease-out-soft)_0.2s_both] mt-7 max-w-[46ch] text-lg text-pretty text-ink/70">
-              Graduate Biomedical Engineer from the University of Technology Sydney,
-              with a Sub-Major in Mechanical Engineering. I design and build practical
-              healthcare technologies across medical devices, prototyping, biomaterials,
-              microfabrication and machine learning.
+              I’m a Biomedical Engineering graduate from UTS with a Sub&#8209;Major in Mechanical Engineering.
+              <br></br>
+              <br></br>
+              I enjoy the hands-on side of engineering: taking an idea, building it, testing it and working out how to make it better. What draws me to healthcare is the chance to create something useful for patients and the people caring for them. My projects explore this through medical devices, biomaterials and machine learning.
             </p>
             <div className="animate-[rise_0.8s_var(--ease-out-soft)_0.3s_both] mt-9 flex flex-wrap items-center gap-4">
               <a
