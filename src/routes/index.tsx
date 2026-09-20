@@ -127,7 +127,7 @@ function Index() {
               Degree
             </p>
             <p className="mt-1 font-medium">
-              B.Eng. (Hons), Biomedical Engineering
+              B.Eng. (Hons), Biomedical Engineering,
               <br />
               Mechanical Engineering Sub-Major
             </p>
