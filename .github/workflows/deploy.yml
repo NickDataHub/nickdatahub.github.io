@@ -1,16 +1,24 @@
-name: Deploy Portfolio to cPanel
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
     branches:
       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  workflow_dispatch:
 
-    permissions:
-      contents: read
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -28,23 +36,23 @@ jobs:
       - name: Build website
         run: npm run build
 
-      - name: Configure SSH
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-        run: |
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 21098 "$CPANEL_HOST" >> ~/.ssh/known_hosts
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
 
-      - name: Deploy website
-        env:
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-          CPANEL_USER: ${{ secrets.CPANEL_USER }}
-        run: |
-          rsync -avz \
-            -e "ssh -p 21098 -i ~/.ssh/id_rsa" \
-            .output/public/ \
-            "$CPANEL_USER@$CPANEL_HOST:/home/$CPANEL_USER/public_html/"
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.output/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
